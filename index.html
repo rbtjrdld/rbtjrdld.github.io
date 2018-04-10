@@ -5,67 +5,74 @@
   <title>12151466_장규석_과제1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel = "stylesheet" type = "text/css" href = "jks.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1>Jang.K.S's BloG</h1>
+  <div class = "container-fluid header">
+  <header  class = "jumbotron row bg-light">
+    <h1 class="row">Jang.K.S's BloG</h1>
   </header>
+</div>
 
-  <nav>
-    <ul>
-      <li>
-        <a href = "#Internet_Programming">인터넷 프로그래밍</a> 
-      </li>
-      <li>
-        <a href = "#FootBall">FootBall</a>
-      </li>
-      <li>
-        <a href = "#Books">Books</a>
-      </li>
-      <li class = "dropdown">
-        <a href = "javascript:void(0)" class = "dropbtn">Others</a>
-        <div class = "dropdown-content">
-          <a href = "#">Travel</a>
-          <a href = "#">Foods</a>
-          <a href = "#">Games</a>
+<div class = "container main">
+
+  <nav class = "row">
+      <button class = "btn col" type="button">Internet Programming</button>
+      <button class = "btn col" type="button">FootBall</button>
+      <button class = "btn col" type="button">Books</button>
+      <div class="dropdown btnwidth">
+          <button class="btn dropdown-toggle col" type="button" data-toggle="dropdown">Others
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Travels</a></li>
+            <li><a href="#">Foods</a></li>
+          </ul>
         </div>
-      </li>
-    </ul>
   </nav>
 
-  <section class = "leftsection">
-    <section class = "upsection">
-      <article class = "nameimage">
-        <img src = "name.png" alt = "JKS" width = "420px" height="180px"> 
+<div class = "row">
+  <section class = "col-9">
+
+    <section class = "row upsection">
+
+      <article class= "col">
+          <img src = "upsectionback.png" class = "upimg">
       </article>
        
-      <article class = "name">
-          <p>Jang</p> 
-          <p>Kyu</p> 
-          <p>Seok</p>
-      </article>
     </section>
 
-    <article class = "downsection">
-        <p>인하대학교 재학</p>
-        <p>컴퓨터공학</p>
-        <P>1995.08.02</P>
-        <p>피곤해</p>
-    </article>
+    <section class = "row downsection">
+        <p class = "col">인하대학교 재학<br>
+                         컴퓨터공학<br>
+                         1995.08.02</P>
+    </section>
+
   </section>
 
-  <aside>
-    <a href = "https://www.naver.com">NAVER</a><br>
-    <a href = "https://www.google.com">GOOGLE</a><br>
-    <a href = "https://www.facebook.com">FACEBOOK</a>
+  <aside class = "col">
+    <a href = "https://www.naver.com"><img src = "naver.png"></a><br>
+    <a href = "https://www.google.com"><img src = "google.png"></a><br>
+    <a href = "https://www.facebook.com"><img src = "facebook.png"></a>
+    <a href = "https://portal.inha.ac.kr/"><img src = "inha.png"></a>
   </aside>
+  </div>
+  </div>
 
-  <footer>
-    <p>Copyright 2018, JKS</p>
-    <p>E-mail : rbtjrdld@naver.com</p>
-    <p>Phone Number : 010 - XXXX - 7054</p>
+  <div class = "container-fluid">
+  <footer class = "jumbotron row bg-light">
+    <p class = "col">Copyright 2018, JKS<br>
+       E-mail : rbtjrdld@naver.com<br>
+       Phone Number : 010 - XXXX - 7054
+    </p>
   </footer>
+  </div>
+
 
 </body>
 </html>
